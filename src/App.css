@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+._container {
+	margin: 1rem;
+}
+._btn {
+	width: 103px;
+	border: none;
+	height: 43px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px #fff;
+	font-size: 1.5rem;
+	background-color: rgb(221, 221, 221);
+	cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+._btn._light {
+	background-color: rgb(241, 241, 241);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+._btn._blue {
+	background-color: rgb(98, 101, 255);
+	color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+._btn:active {
+	filter: opacity(0.5);
 }
 
-.App-link {
-  color: #61dafb;
+._num_field {
+	margin: 1rem 0;
+	border-radius: 8px;
+	max-width: 435px;
+	border: 1px solid rgb(195, 195, 195);
+	padding: 1rem 1rem;
+	font-size: 1.4rem;
+	text-align: right;
+	overflow: hidden;
+	overflow-x: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+._num_field::-webkit-scrollbar {
+	display: none;
+}
+
+._grid {
+	margin-top: 1rem;
+	display: grid;
+	width: 324px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0.5rem;
+}
+
+._flex {
+	display: flex;
+	gap: 0.5rem;
 }
