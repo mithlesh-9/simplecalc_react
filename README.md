@@ -1,3 +1,3 @@
 # simplecalc_react
 
-[live URL] (https://calc-mini.netlify.app/)
+live URL[https://calc-mini.netlify.app/]
